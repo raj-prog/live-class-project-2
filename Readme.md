@@ -13,3 +13,5 @@
 ### Project Screenshot
 
 ![screenshot](/thumbnail.png)
+
+[Live Demo](https://live-class-proj-02.netlify.app/)
