@@ -1,0 +1,27 @@
+@media screen and (max-width: 64rem) {
+  .hero-heading {
+    font-size: 6rem;
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .hero-heading {
+    font-size: 4rem;
+    margin-top: 4rem;
+  }
+
+  .navbar .list-item {
+    display: none;
+  }
+
+  .button-large {
+    font-style: 0.5rem;
+  }
+
+  .bottom {
+    position: absolute;
+    right: 0px;
+    bottom: -22rem;
+  }
+}

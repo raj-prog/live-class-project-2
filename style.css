@@ -2,11 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Red Rose", cursive;
+  font-family: 'Red Rose', cursive;
 }
 
 body {
-  background-color: rgba(41, 41, 52, 0.75)
+  background-color: rgba(41, 41, 52, 0.75);
+  overflow: hidden;
 }
 
 html {
@@ -14,13 +15,15 @@ html {
   height: 100%;
   display: block;
   position: relative;
+  font-size: 62.5%;
 }
 
 html::before {
-  content: "";
+  content: '';
   position: absolute;
-  background: url("./assets/pexels-maxyne-barcel-10402282\ 1.png") no-repeat center center/cover;
-  opacity: .4;
+  background: url('./assets/pexels-maxyne-barcel-10402282\ 1.png') no-repeat
+    center center/cover;
+  opacity: 0.4;
   top: 0;
   left: 0;
   bottom: 0;
@@ -28,10 +31,8 @@ html::before {
 }
 
 .container {
-  margin: 40px;
+  margin: 4rem;
 }
-
-
 
 /* ------------------------------ */
 /* ---------- NAVBAR ------------ */
@@ -40,71 +41,66 @@ html::before {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 100px;
 }
 
-.logo {
-  position: relative;
-  left: 0;
-  top: 0;
-}
-
-.list {
+.navbar,
+.list,
+.hero {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
 }
 
-.list-item{
+.list-item {
   font-family: 'Red Rose', cursive;
   list-style-type: none;
-  padding: 10px 20px;
-  color: #FFC233;
+  font-size: 1.6rem;
+  color: #ffc233;
   position: relative;
 }
 
 .button-small {
   position: relative;
-  background-color: #FF505F;
+  background-color: #ff505f;
   color: #fff;
   border: 0;
-  font-size: 18px;
-  padding: 12px 30px;
+  font-size: 1.8rem;
+  padding: 1.2rem 3rem;
 }
-
-
 
 /* ------------------------------ */
 /* ---------- HERO ------------ */
 /* ------------------------------ */
 .hero {
   position: relative;
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .hero-heading {
-  font-size: 90px;
+  font-size: 9rem;
   line-height: 1.2;
-  width: 1000px;
+  width: 80%;
   text-align: center;
   font-family: 'Dela Gothic One', cursive;
-  color: #FFC233;
+  color: #ffc233;
+  margin-top: 2rem;
 }
 
 .button-large {
   text-align: center;
-  background-color:#FF505F;
+  background-color: #ff505f;
   color: #fff;
-  font-size: 25px;
-  padding: 20px 40px;
+  font-size: 2.5rem;
+  padding: 2rem 4rem;
   border: none;
-  margin-top: 30px;
+  margin-top: 3rem;
   font-weight: bold;
 }
 
 .bottom {
   position: absolute;
   right: 0px;
-  bottom: -180px;
+  bottom: -16rem;
 }
